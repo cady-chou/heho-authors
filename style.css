@@ -1,0 +1,178 @@
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(242, 241, 229);
+}
+
+a {
+    color: #262626;
+    text-decoration: none
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.col-1-3 {
+    position: relative;
+    width: 30%;
+    display: inline-block;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 1080px;
+}
+
+.heho-authors-box {
+    position: fixed;
+    top: 20px;
+    width: 220px;
+    height: 300px;
+    background-color: rgba(256, 256, 256, 0.8);
+    border: 3px solid #566f31;
+    border-radius: 5%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(53, 53, 53, 0.3);
+}
+
+@media (max-width:996px) {
+    .col-1-3 {
+        width: 100%;
+    }
+    .heho-authors-box {
+        position: relative;
+    }
+}
+
+.heho-authors-box:after {
+    content: "營養師";
+    width: 50px;
+    height: 20px;
+    background-color: #566f31;
+    padding: 5px 8px;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: -1px;
+}
+
+.heho-authors-box:hover {
+    box-shadow: 6px 6px 14px rgba(53, 53, 53, 0.3);
+}
+
+.authors-title {
+    text-align: center;
+}
+
+.authors-image {
+    width: 120px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.authors-name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 0px;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #566f31;
+}
+
+.authors-introduction {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.heho-authors-list {
+    width: 65%;
+    position: absolute;
+    right: 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+@media (max-width:996px) {
+    .heho-authors-list {
+        width: 95%;
+    }
+}
+
+.heho-authors-list .heho-author:first-child {
+    margin-top: .75rem;
+    border-top: 1px solid #e6e6e6
+}
+
+.heho-author {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e6e6e6;
+    display: inline-flex
+}
+
+.heho-author-thumbnail {
+    position: relative;
+    display: inline-block;
+    width: 40%
+}
+
+.heho-author-thumbnail img {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 5%;
+}
+
+.heho-author-contents {
+    display: inline-block;
+    vertical-align: top;
+    padding: 1rem;
+    width: 60%;
+}
+
+.heho-author-headline {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.heho-author-publish-date {
+    font-size: 12px;
+    color: #595959;
+    padding: .25rem 0
+}
+
+.heho-author-body {
+    font-size: 14px;
+    margin: .5rem 0;
+    position: relative;
+    overflow: hidden
+}
+
+@media (max-width:768px) {
+    .heho-author-thumbnail {
+        width: 30%
+    }
+    .heho-author-contents {
+        width: 70%
+    }
+    .heho-author-headline {
+        font-size: 1rem
+    }
+    .heho-author-body {
+        display: none
+    }
+    .heho-author {
+        padding-bottom: .25rem
+    }
+}
