@@ -153,15 +153,6 @@ p {
     width: 60%;
 }
 
-@media (max-width:996px) {
-    .heho-author-thumbnail {
-        width: 50%;
-    }
-    .heho-author-contents {
-        width: 50%;
-    }
-}
-
 .heho-author-headline {
     font-weight: 600;
     font-size: 20px;
